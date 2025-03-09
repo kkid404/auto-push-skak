@@ -19,7 +19,7 @@
 
         .square {
             width: 1000px;
-            height: 500px;
+            /* height: 500px; */
             border: 2px solid black;
             background-color: white;
             /* display: flex;
@@ -32,27 +32,66 @@
             height: 454px;
             overflow: scroll;
             border: solid 2px;
+            margin-top: 10px;
 
+        }
+
+        .square input:nth-child(1) {
+            border: solid;
+            width: 120px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .square input:nth-child(2) {
+            border: solid;
+            width: 120px;
+            height: 50px;
+        }
+
+        .square textarea:nth-child(3) {
+            border: solid;
+            width: 300px;
+            height: 50px;
+
+            position: relative;
+            top: 26px;
+        }
+
+        .square textarea:nth-child(4) {
+            border: solid;
+            width: 300px;
+            height: 50px;
+
+            position: relative;
+            top: 26px;
+        }
+        #copy {
+            margin: 10px;
         }
     </style>
 </head>
 
 <body>
     <div class="square">
-        <input id="text1" type="text" placeholder="количество ячеек">
-        <input id="text2" type="text" placeholder="язык (например en)">
-        <textarea placeholder="заголовок" name="" id="textInput"></textarea>
-        <textarea placeholder="сообщение" name="" id="textInput2"></textarea>
-        <button id="create">создать код</button>
+        <div class="square_block">
+            <input id="text1" type="text" placeholder="количество ячеек">
+            <input id="text2" type="text" placeholder="язык (например en)">
+            <textarea placeholder="заголовок" name="" id="textInput"></textarea>
+            <textarea placeholder="сообщение" name="" id="textInput2"></textarea>
+            <button id="create">создать код</button>
+        </div>
 
         <div class="info"> </div>
+
+        <button id="copy">скопировать код</button>
 
 
     </div>
 
 
 
-    <button id="copy">скопировать код</button>
+
 
 
 
